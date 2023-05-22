@@ -14,6 +14,7 @@ Questo comando deve contenere il percorso per arrivare alla cartella
 
 ![image](https://github.com/Iltelli05/Esercitazione19Maggio/assets/129155620/978db7ff-3e5d-4a91-845b-b09d89898abd)
 
+
 ## Configurazione del repository locale e sincronizzazione
 Eseguire questi comandi in oridine su git bash:
 ``` git init  # Inizializza il repository locale
@@ -22,6 +23,15 @@ Eseguire questi comandi in oridine su git bash:
    git branch -M main  # Creazione del branch main, da usare come default
    git remote add origin https://github.com/<username>/Esercitazione16maggio  # Connessione del repository remoto al repository locale
    git push -u origin main  # Sincronizzazione del repository remoto con quello locale
+```
+
+## Aggiunta dei file alla repository
+- Selezionare i file che si vogliono condividere ed inserirli sulla cartella sul desktop.
+- una volta aggiunti nella cartella biaogna andare su git bash e eseguire i seguenti comandi:
+```git add . # Inserimento di tutti i nuovi file della cartella nell'area di staging
+git commit -m "commit dei file" # Creazione del commit, che serve a sincronizzare il repository locale con lo stage
+git push -u origin main # Sincronizzazione del repository remoto con quello locale
+```
 
 
 
